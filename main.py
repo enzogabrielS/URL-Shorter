@@ -17,8 +17,8 @@ def urlshortener():
     window['-URL_SHORT-'].update(shortener)
 
 def copyclipboard():
-    urlshort = window['-URL_SHORT-'].get()
-    pyperclip.copy(urlshort)
+    urlToCopy = window['-URL_SHORT-'].get()
+    pyperclip.copy(urlToCopy)
 
 window = sg.Window('Url Shortner', layout_fixo, finalize=True, element_justification='c')
 
