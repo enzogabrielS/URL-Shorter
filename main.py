@@ -14,6 +14,7 @@ layout_fixo = [
     [sg.Input(key='-URL_SHORT-', size=(45, 1), text_color='Black', justification='center',disabled=True,font=('Arial', 15))]
 ]
 
+
 def urlshortener():
     shortener = pyshorteners.Shortener().tinyurl.short(valores['-URL_INPUT-'])
     window['-URL_SHORT-'].update(shortener)
