@@ -49,6 +49,7 @@ while True:
                 continue
             copyclipboard()
 
+    
     except Exception as e:
         sg.popup(f'Ocorreu um erro: {str(e)}', title='ERRO')
         continue
